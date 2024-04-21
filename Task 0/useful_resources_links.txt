@@ -1,0 +1,12 @@
+[1] https://github.com/jeelabs/esp-link
+desc : 	esp-link is tool which can be used for creating
+	Wifi Serial bridge between Mini and ESP32.
+	Currently supports only few uC mentioned in the github repo.
+	
+
+[2] https://pallavaggarwal.in/2023/11/22/ch32v003-how-to-flash-program-using-serial-port/
+desc : 	Currently the Mini is programmed with one-wire interface. This tool
+	reflashes the Mini to handle uploads using UART.
+
+[3] https://github.com/AlexanderMandera/arduino-wch32v003
+desc :	CH3200X boards for Arduino IDE.
