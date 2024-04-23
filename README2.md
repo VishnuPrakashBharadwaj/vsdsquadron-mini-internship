@@ -8,3 +8,7 @@ The project focuses on programming the VSDSquadron-Mini board using Over-The-Air
 * Espressif ESP32-WROOM-32UE WiFi Module
 * Jumper wires
 
+By default, the VSDSquadron-Mini board is configured to be programmed through Single-Wire Protocol and currespondingly WCH-LinkE is used for programming this. As it is difficult to get the timings perfectly for ESP32 board to update the firmware over Single-wire protocol, we can flash the VSDSquadron-Mini with IAP program, which allows us to program it through UART / USART. Hence, we can upload the file to ESP32's local file server and then the ESP32 can be configured to program the VSDSquadron-Mini through UART.
+
+## Schematic Diagram
+![Schematic Diagram]()
