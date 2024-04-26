@@ -41,7 +41,7 @@ By default, the VSDSquadron-Mini board is configured to be programmed through Si
 In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-Mini (VSDSM) as follows:
 * The 3V3 pin of NodeMCU is connected to 3V3 of VSDSM and GND of NodeMCU is connected to GND of VSDSM. This supplies power to the NodeMCU.
 * The D7 (RX2) pin of NodeMCU is connected to PD5 (TX) pin of VSDSM. This allows NodeMCU to read the data sent from VSDSM.
-* The D8 (TX2) pin of NodeMCU is connected to PD6 (RX) pin of VSDSM. This allows NodeMCU to send the wirelessly received data to the VSDSM.
+* The D8 (TX2) pin of NodeMCU is connected to PD6 (RX) pin of VSDSM. This allows NodeMCU to transmit the data to the VSDSM. All the commands for flashing the VSDSM will be sent through this pin.
 * The D6 pin of NodeMCU is connected to PD7 (NRST) pin of VSDSM. This allows NodeMCU to reset the VSDSM and make it enter the program mode.
 
 ### Pinout Diagram
