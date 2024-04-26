@@ -19,6 +19,7 @@ In this method, we are going flash the VSDSquadron-Mini board using the HC-05 Bl
 * Jumper wires
 
 ### Schematic Diagram
+![Schematic Diagram](images/schematic_method1_latest.png)
 
 ## Method II : OTA using ESP8266 (NodeMCU 1.0 ESP-12E) WiFi module
 
