@@ -42,6 +42,7 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 * The 3V3 pin of NodeMCU is connected to 3V3 of VSDSM and GND of NodeMCU is connected to GND of VSDSM. This supplies power to the NodeMCU.
 * The D7 (RX2) pin of NodeMCU is connected to PD5 (TX) pin of VSDSM. This allows NodeMCU to read the data sent from VSDSM.
 * The D8 (TX2) pin of NodeMCU is connected to PD6 (RX) pin of VSDSM. This allows NodeMCU to send the wirelessly received data to the VSDSM.
+* The D6 pin of NodeMCU is connected to PD7 (NRST) pin of VSDSM. This allows NodeMCU to reset the VSDSM and make it enter the program mode.
 
 ### Pinout Diagram
 <img src="images/schematic_method2_latest.png" alt="Method 2 Schematic" width="600">
