@@ -11,7 +11,7 @@ We are going to use the following softwares and tools to program the VSDSquadron
 ## Method I : OTA using HC-05 Bluetooth module
 
 ### Description
-In this method, we are going flash the VSDSquadron-Mini board using the HC-05 Bluetooth module.
+In this method, we are going flash the VSDSquadron-Mini board using the HC-05 Bluetooth module. Instead of programming the board over wired Serial link, we are going to use Standard Serial over Bluetooth link, which can be though of as a portal which connects 2 devices over the air.
 
 ### Components required
 * VSDSquadron-Mini board
