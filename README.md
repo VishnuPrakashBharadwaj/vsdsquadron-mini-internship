@@ -5,7 +5,7 @@ The project focuses on programming the VSDSquadron-Mini board using Over-The-Air
 
 ## Method I
 
-## Components required
+# Components required
 * VSDSquadron-Mini board
 * Espressif ESP32-WROOM-32UE WiFi Module
 * Jumper wires
