@@ -19,7 +19,10 @@ In this method, we are going flash the VSDSquadron-Mini board using the HC-05 Bl
 * Jumper wires
 
 ### Circuit Connection
-
+In this method, the HC-05 bluetooth module is connected to the VSDSquadron-Mini (VSDSM) as follows:
+* The VCC pin of HC-05 is connected to 5V of VSDSM and GND of HC-05 is connected to GND of VSDSM. This supplies power to the HC-05 module.
+* The RX pin of HC-05 is connected to PD5 (TX) pin of VSDSM. This allows HC-05 to radiate data sent from VSDSM.
+* The TX pin of HC-05 is connected to PD6 (RX) pin of VSDSM. This allows HC-05 to send the wirelessly received data to the VSDSM.
 
 ### Pinout Diagram
 <img src="images/schematic_method1_latest.png" alt="Method 2 Schematic" width="600">
