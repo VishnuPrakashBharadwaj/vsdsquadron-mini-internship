@@ -3,9 +3,12 @@
 ## Overview
 The project focuses on programming the VSDSquadron-Mini board using Over-The-Air (OTA) feature. This means we can update the board remotely without needing to connect it physically. It's a convenient way to make changes and improvements to the board's software without hassle. This approach simplifies the process, making it easier for developers to manage and update the board's firmware from anywhere, enhancing its usability and versatility. There are two ways to implement OTA feature, as described below.
 
-## Method I
+## Method I : OTA using HC-05 Bluetooth module
 
-# Components required
+### Description
+
+
+### Components required
 * VSDSquadron-Mini board
 * Espressif ESP32-WROOM-32UE WiFi Module
 * Jumper wires
@@ -14,3 +17,6 @@ By default, the VSDSquadron-Mini board is configured to be programmed through Si
 
 ## Schematic Diagram
 ![Schematic Diagram](week_1/schematic2.png)
+
+## Method II : OTA using NODEMCU-12E (ESP8266) WiFi module
+
