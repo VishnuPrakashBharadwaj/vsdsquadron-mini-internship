@@ -5,8 +5,8 @@ The project focuses on programming the VSDSquadron-Mini board using Over-The-Air
 
 ## Setup
 We are going to use the following softwares and tools to program the VSDSquadron-Mini board.
-* [MounRiver Studio v1.91](http://www.mounriver.com/download)
-* 
+* [MounRiver Studio v1.91](http://www.mounriver.com/download "MRS 1.91 Download page")
+* [WCH-LinkUtility](https://www.wch.cn/downloads/WCH-LinkUtility_ZIP.html "WCH-LinkUtility Download page")
 
 ## Method I : OTA using HC-05 Bluetooth module
 
