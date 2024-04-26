@@ -10,7 +10,11 @@ We are going to use the following softwares and tools to program the VSDSquadron
 
 ## Method I : OTA using HC-05 Bluetooth module
 
+### Description
 
+### Components required
+
+### Schematic Diagram
 
 ## Method II : OTA using NODEMCU-12E (ESP8266) WiFi module
 
