@@ -32,4 +32,4 @@ By default, the VSDSquadron-Mini board is configured to be programmed through Si
 * Jumper wires
 
 ### Schematic Diagram
-![Schematic Diagram](week_1/schematic2.png)
+![Schematic Diagram](images/schematic_method2_latest.png)
