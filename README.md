@@ -13,17 +13,20 @@ We are going to use the following softwares and tools to program the VSDSquadron
 ### Description
 
 ### Components required
+* VSDSquadron-Mini board
+* HC-05 Bluetooth module
+* Jumper wires
 
 ### Schematic Diagram
 
-## Method II : OTA using NODEMCU-12E (ESP8266) WiFi module
+## Method II : OTA using ESP8266 (NodeMCU 1.0 ESP-12E) WiFi module
 
 ### Description
-By default, the VSDSquadron-Mini board is configured to be programmed through Single-Wire Protocol and currespondingly WCH-LinkE is used for programming this. As it is difficult to get the timings perfectly for ESP32 board to update the firmware over Single-wire protocol, we can flash the VSDSquadron-Mini with IAP program, which allows us to program it through UART / USART. Hence, we can upload the file to ESP32's local file server and then the ESP32 can be configured to program the VSDSquadron-Mini through UART.
+By default, the VSDSquadron-Mini board is configured to be programmed through Single-Wire Protocol and currespondingly WCH-LinkE is used for programming this. As it is difficult to get the timings perfectly for ESP8266 board to update the firmware over Single-wire protocol, we can flash the VSDSquadron-Mini with IAP program, which allows us to program it through UART / USART. Hence, we can upload the file to ESP8266's local server and then the ESP8266 can be configured to program the VSDSquadron-Mini through UART.
 
 ### Components required
 * VSDSquadron-Mini board
-* Espressif ESP32-WROOM-32UE WiFi Module
+* ESP8266 (NodeMCU 1.0 ESP-12E) module
 * Jumper wires
 
 ### Schematic Diagram
