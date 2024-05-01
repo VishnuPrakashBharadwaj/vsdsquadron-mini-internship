@@ -9,6 +9,30 @@ We are going to use the following softwares and tools to program the VSDSquadron
 * [WCH-LinkUtility](https://www.wch.cn/downloads/WCH-LinkUtility_ZIP.html "WCH-LinkUtility Download page")
 * [Arduino IDE 2.3.2](https://www.arduino.cc/en/software "Arduino IDE Download page")
 
+## Method I : OTA using HC-05 Bluetooth module
+
+### Description
+In this method, we are going flash the VSDSquadron-Mini board using the HC-05 Bluetooth module. Instead of programming the board over wired Serial link, we are going to use Standard Serial over Bluetooth link, which can be thought of as a portal which connects 2 devices over the air.
+
+### Components required
+* VSDSquadron-Mini board
+* HC-05 Bluetooth module
+* Jumper wires
+
+### Circuit Connection
+In this method, the HC-05 bluetooth module is connected to the VSDSquadron-Mini (VSDSM) as follows:
+* The VCC pin of HC-05 is connected to 5V of VSDSM and GND of HC-05 is connected to GND of VSDSM. This supplies power to the HC-05 module.
+* The RX pin of HC-05 is connected to PD5 (TX) pin of VSDSM. This allows HC-05 to radiate data sent from VSDSM.
+* The TX pin of HC-05 is connected to PD6 (RX) pin of VSDSM. This allows HC-05 to send the wirelessly received data to the VSDSM.
+
+### Pinout Diagram
+<img src="images/schematic_method1_latest.png" alt="Method 2 Schematic" width="600">
+
+## Method II : OTA using ESP8266 (NodeMCU 1.0 ESP-12E) WiFi module
+
+### Description
+By default, the VSDSquadron-Mini board is configured to be programmed through Single-Wire Protocol and currespondingly WCH-LinkE is used for programming this. As it is difficult to get the timings perfectly for ESP8266 board to update the firmware over Single-wire protocol, we can flash the VSDSquadron-Mini with IAP program, which allows us to program it through UART / USART. Hence, we can upload the file to ESP8266's local server and then the ESP8266 can be configured to program the VSDSquadron-Mini through UART.
+
 ### Components required
 * VSDSquadron-Mini board
 * ESP8266 (NodeMCU 1.0 ESP-12E) module
