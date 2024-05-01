@@ -1,68 +1,43 @@
-/********************************** (C) COPYRIGHT *******************************
- * File Name          : main.c
- * Author             : WCH
- * Version            : V1.0.0
- * Date               : 2023/12/25
- * Description        : Main program body.
- *********************************************************************************
- * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
- * Attention: This software (modified or not) and binary are used for 
- * microcontroller manufactured by Nanjing Qinheng Microelectronics.
- *******************************************************************************/
-/*
- *@Note
- *IAP upgrade routine:
- *Support serial port for FLASH burning
- *
- *1. Use the IAP download tool to realize the download PA0 floating (default pull-up input)
- *2. After downloading the APP, connect PC0 to ground (low level input), and press the
- *reset button to run the APP program.
- *3. use WCH-LinkUtility.exe download to BOOT(adr-0x1FFFF000)
- *
- */
-
+// Importing header files
 #include "debug.h"
 #include "string.h"
 #include "iap.h"
 
-/*********************************************************************
- * @fn      IAP_2_APP
- *
- * @brief   IAP_2_APP program.
- *
- * @return  none
- */
+// Function which jumps from BOOT area (1920B) to USER area (16K)
 void IAP_2_APP(void)
 {
-    RCC_ClearFlag();
-    SystemReset_StartMode(Start_Mode_USER);
-    NVIC_SystemReset();
+    RCC_ClearFlag();                        // Clearing all the reset and clock control flags
+    SystemReset_StartMode(Start_Mode_USER); // Setting the Start mode to USER
+    NVIC_SystemReset();                     // Performing a System reset
 }
 
-/*********************************************************************
- * @fn      main
- *
- * @brief   Main program.
- *
- * @return  none
- */
+
 int main(void)
 {
-    RCC->APB2PCENR |= RCC_APB2Periph_GPIOD| RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOC;/* Enable GPIOD,USART1, GPIOC  clock */
+    // Enable GPIOD,USART1 clock
+    RCC->APB2PCENR |= RCC_APB2Periph_GPIOD| RCC_APB2Periph_USART1;
+
+    // Setting the UART baud rate to 38400
     USART1_CFG(38400);
 
-    if(PC0_Check() == 0)
-    {
-            IAP_2_APP();
-            while(1);
-    }
+    // A temporary count variable used for creating delay
+    u32 count = 0;
 
+    // Loop
     while(1)
     {
-        if(USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET)
-        {
-            UART_Rx_Deal();
-
+        // If no data is recieved through UART, keep on counting
+        while(USART_GetFlagStatus(USART1, USART_FLAG_RXNE) != SET){
+            count++;
+            // If the count exceeds this threshold, then the execution will be redirected to USER area
+            if(count >= 3000000){
+                IAP_2_APP();
+                while(1);
+            }
         }
+
+        // If the above loop terminates, it means data is recieved through UART
+        count = 0;          // Resetting the counter
+        UART_Rx_Deal();     // Deal with the incoming data
     }
 }

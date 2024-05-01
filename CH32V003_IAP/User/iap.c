@@ -255,7 +255,7 @@ void UART_Rx_Deal(void)
     u8 i, s;
     u8 Data_add = 0;
 
-    UART1_SendData(0x42);
+    //UART1_SendData(Uart1_Rx() + 1);
 
     if (Uart1_Rx() == Uart_Sync_Head1)
     {
