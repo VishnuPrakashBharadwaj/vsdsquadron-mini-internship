@@ -1,4 +1,4 @@
-# Programming VSDSquadron-Mini using Over-The-Air(OTA) Feature
+![thumbnail](https://github.com/VishnuPrakashBharadwaj/vsdsquadron-mini-internship/assets/39427770/fea8450a-d51f-43a6-8adc-0a5408810013)# Programming VSDSquadron-Mini using Over-The-Air(OTA) Feature
 
 ## Overview
 The project focuses on programming the VSDSquadron-Mini board using Over-The-Air (OTA) feature. This means we can update the board remotely without needing to connect it physically. It's a convenient way to make changes and improvements to the board's software without hassle. This approach simplifies the process, making it easier for developers to manage and update the board's firmware from anywhere, enhancing its usability and versatility. There are two ways to implement OTA feature, as described below.
@@ -25,4 +25,5 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 <img src="images/schematic_method2_latest.png" alt="Method 2 Schematic" width="600">
 
 ## Application Video
+[![Application video](images/thumbnail.png)](https://drive.google.com/file/d/1TSE8psuwjwD9OtebpIiWAn0XAvSW6L6_/view?usp=drive_link "Application Video")
 * [Application video](https://drive.google.com/file/d/1TSE8psuwjwD9OtebpIiWAn0XAvSW6L6_/view?usp=drive_link)
