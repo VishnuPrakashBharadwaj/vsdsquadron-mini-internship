@@ -23,3 +23,5 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 
 ## Pinout Diagram
 <img src="images/schematic_method2_latest.png" alt="Method 2 Schematic" width="600">
+
+## Application Video
