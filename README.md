@@ -28,4 +28,4 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 ### Uploading the code to VSDSquadron-Mini from laptop
 [![Application video](images/thumbnail2.png)](https://drive.google.com/file/d/1TSE8psuwjwD9OtebpIiWAn0XAvSW6L6_/view?usp=drive_link "Application Video")
 ### Uploading the code to VSDSquadron-Mini from a Smartphone
-[![Application video2](images/thumbnail2.png)](https://drive.google.com/file/d/1htyjodWLxtwLsM0IQStrbT4MHvds-Vl6/view?usp=drive_link "Application Video2")
+[![Application video2](images/thumbnail3.png)](https://drive.google.com/file/d/1htyjodWLxtwLsM0IQStrbT4MHvds-Vl6/view?usp=drive_link "Application Video2")
