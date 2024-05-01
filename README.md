@@ -25,4 +25,7 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 <img src="images/schematic_method2_latest.png" alt="Method 2 Schematic" width="600">
 
 ## Application Video
+### Uploading the code to VSDSquadron-Mini from laptop
 [![Application video](images/thumbnail2.png)](https://drive.google.com/file/d/1TSE8psuwjwD9OtebpIiWAn0XAvSW6L6_/view?usp=drive_link "Application Video")
+### Uploading the code to VSDSquadron-Mini from a Smartphone
+[![Application video2](images/thumbnail2.png)](https://drive.google.com/file/d/1htyjodWLxtwLsM0IQStrbT4MHvds-Vl6/view?usp=drive_link "Application Video2")
