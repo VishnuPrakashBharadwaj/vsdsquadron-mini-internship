@@ -37,5 +37,6 @@ Triggering an unexpected, incorrect execution in a system.
 ### What is a 'fault injection'?
 Triggering an unexpected, incorrect execution by *intensionally* altering the environment.
 
-
+### Types of Fault Injections:
+1. Voltage Fault Injection: Attackers manipulate the power supply voltage to induce faults in hardware components, such as microcontrollers or memory chips, causing erroneous behavior or data corruption.
 
