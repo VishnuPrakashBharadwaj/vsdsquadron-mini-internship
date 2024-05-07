@@ -31,9 +31,11 @@ In this method, the NodeMCU 1.0 ESP-12E module is connected to the VSDSquadron-M
 [![Application video2](images/thumbnail3.png)](https://drive.google.com/file/d/1htyjodWLxtwLsM0IQStrbT4MHvds-Vl6/view?usp=drive_link "Application Video2")
 
 ## Fault Injection Attacks on VSDSquadron-Mini board
-**What is a 'fault'?**
+### What is a 'fault'?
 Triggering an unexpected, incorrect execution in a system.
 
-**What is a 'fault injection'?**
+### What is a 'fault injection'?
 Triggering an unexpected, incorrect execution by *intensionally* altering the environment.
+
+
 
