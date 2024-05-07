@@ -43,3 +43,7 @@ Triggering an unexpected, incorrect execution by *intensionally* altering the en
 3. **Optical Fault Injection**: Using lasers or intense light sources, attackers target specific areas of the device to induce faults, potentially altering the behavior of integrated circuits or causing them to malfunction.
 4. **Electromagnetic Fault Injection (EMFI)**: This technique involves exposing the device to electromagnetic interference, which can disrupt its normal operation by causing transient faults in sensitive components.
 
+### Fault injection attacks could not be performed due to following reasons:
+1. Voltage glitching requires desoldering of decoupling capacitors present on the VSDSquadron-Mini board.
+2. Clock glitching requires desoldering crystal oscillator and its decoupling capacitors.
+3. Unavailability of equipments like Oscilloscope and Logic Analyzer.
