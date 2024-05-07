@@ -38,5 +38,8 @@ Triggering an unexpected, incorrect execution in a system.
 Triggering an unexpected, incorrect execution by *intensionally* altering the environment.
 
 ### Types of Fault Injections:
-1. Voltage Fault Injection: Attackers manipulate the power supply voltage to induce faults in hardware components, such as microcontrollers or memory chips, causing erroneous behavior or data corruption.
+1. **Voltage Fault Injection**: Attackers manipulate the power supply voltage to induce faults in hardware components, such as microcontrollers or memory chips, causing erroneous behavior or data corruption.
+2. **Clock Glitching**: By disrupting the system clock signals, attackers can create timing violations, leading to incorrect processing or execution of instructions within the targeted device.
+3. **Optical Fault Injection**: Using lasers or intense light sources, attackers target specific areas of the device to induce faults, potentially altering the behavior of integrated circuits or causing them to malfunction.
+4. **Electromagnetic Fault Injection (EMFI)**: This technique involves exposing the device to electromagnetic interference, which can disrupt its normal operation by causing transient faults in sensitive components.
 
